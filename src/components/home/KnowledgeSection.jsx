@@ -44,13 +44,14 @@ const Hero = () => {
             }}
             gutterBottom
           >
-            Whereas disregard and contempt
+            Exploring the Cosmos with NASA
           </Typography>
           <Typography variant="h6" gutterBottom sx={{ mb: 4 }}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            provident error esse reprehenderit in aperiam, suscipit corrupti
-            praesentium ad et blanditiis distinctio officiis perspiciatis,
-            repellat accusamus similique modi? Eos, in.
+            Embark on a journey through the cosmos with our latest project.
+            Leveraging the power of NASA's APIs, we've created an immersive
+            experience that brings the universe to your fingertips. From
+            tracking asteroids to observing weather patterns on Mars, our
+            project provides a unique perspective on our universe.
           </Typography>
 
           <Divider
