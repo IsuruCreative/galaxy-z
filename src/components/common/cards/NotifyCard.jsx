@@ -25,10 +25,22 @@ const NotifyCard = ({ notification }) => {
   };
 
   return (
-    <Card sx={{ borderRadius: 0 }}>
-      <CardContent sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Chip variant="outlined" label={`Type ${notification.messageType}`} />
+    <Card sx={{ borderRadius: 0, height: "100%" }}>
+      <CardContent sx={{ display: "flex", flexDirection: "column", gap: 2, height: "88%" }}>
+        <Divider sx={{ display: { sm: "hidden" } }} />
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: { sm: "column-reverse", md: "row" },
+          }}
+        >
+          <Chip
+            variant="outlined"
+            sx={{ mt: { sm: 2, md: 0 } }}
+            label={`Type ${notification.messageType}`}
+          />
           <Typography variant="h6">Date {formattedDate}</Typography>
         </Box>
 

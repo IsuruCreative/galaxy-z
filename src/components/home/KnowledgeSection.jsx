@@ -11,11 +11,11 @@ const Hero = () => {
         display: "flex",
         alignItems: "center",
         mb: 8,
-        minHeight: "85vh",
+        minHeight: { sm: "95vh", md: "85vh" },
         backgroundImage: `url(${background})`,
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(${background})`,
         backgroundSize: "cover",
-        backgroundPosition: { sm: "center", md: "right top" },
+        backgroundPosition: { sm: "cente", md: "right top" },
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
       }}

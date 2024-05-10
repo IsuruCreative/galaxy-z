@@ -13,6 +13,7 @@ const RoverCard = ({ photo }) => {
     <Card sx={{ borderRadius: 0 }}>
       <CardMedia
         component="img"
+        sx={{height: "70%"}}
         image={photo.img_src}
         alt="Live from space album cover"
       />

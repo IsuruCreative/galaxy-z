@@ -50,7 +50,7 @@ const SearchNotifications = () => {
   };
 
   return (
-    <Box sx={{ mb: 4.,  backgroundColor: "white", }}>
+    <Box sx={{ mb: 4, backgroundColor: "white" }}>
       <Container>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <Box
@@ -58,6 +58,7 @@ const SearchNotifications = () => {
               p: 2,
               display: "flex",
               gap: 2,
+              flexWrap: { sm: "wrap", md: "nowrap" },
               justifyContent: "center",
             }}
           >
@@ -92,7 +93,7 @@ const SearchNotifications = () => {
             </TextField>
 
             <Button
-              sx={{ width: "50%" }}
+              sx={{ width: { xs: "100%", md: "50%" } }}
               onClick={handleSearch}
               variant="contained"
             >

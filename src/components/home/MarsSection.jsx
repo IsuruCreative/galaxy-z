@@ -8,7 +8,7 @@ const MarsSection = () => {
   const navigate = useNavigate();
 
   return (
-    <Container sx={{ my: 5 }}>
+    <Container sx={{ my: 5, mb: 10 }}>
       <Divider
         sx={{
           borderBottomWidth: "2px",
@@ -21,7 +21,7 @@ const MarsSection = () => {
 
       <MarsData limit={3} />
 
-      <Box sx={{ display: "flex", justifyContent: "end", mt: 4 }}>
+      <Box sx={{ display: "flex", justifyContent: "end", mt: 0 }}>
         <Button
           onClick={() => navigate("/mars")}
           variant="outlined"

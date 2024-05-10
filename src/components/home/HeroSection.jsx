@@ -18,7 +18,7 @@ const Hero = () => {
         backgroundImage: `url(${background})`,
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(${background})`,
         backgroundSize: "cover",
-        backgroundPosition: "right top",
+        backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
       }}

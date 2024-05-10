@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../common/Loading";
 import Error from "../common/Error";
-import { Box, Container } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { fetchDonkiNotifications } from "../../api/nasa.api.mjs";
 import RoverCard from "../common/cards/RoverCard";
 import NotifyCard from "../common/cards/NotifyCard";
@@ -16,7 +16,6 @@ const Notifications = ({ limit }) => {
     queryFn: fetchDonkiNotifications,
   });
 
-  
   if (isLoading) {
     return <Loading />;
   }
@@ -37,16 +36,35 @@ const Notifications = ({ limit }) => {
   console.log(notifications);
 
   return (
-    <Box
-      sx={{
-        display: "grid",
-        gridTemplateColumns: { md: "repeat(2, 1fr)" },
-        gap: 2,
-      }}
-    >
-      {itemsToRender.map((item, index) => {
-        return <NotifyCard notification={item} />;
-      })}
+    <Box>
+      {itemsToRender.length === 0 && (
+        <Typography textAlign="center" variant="h6">
+          No Notifications to be Found
+        </Typography>
+      )}
+
+      {(itemsToRender.length !== 0 || !limit) && (
+        <Typography textAlign="left" variant="h4" sx={{ mb: 5 }}>
+          Space Notifcations
+        </Typography>
+      )}
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: { md: "repeat(2, 1fr)" },
+          gap: 2,
+        }}
+      >
+        {itemsToRender.length === 0 && (
+          <Typography>
+            No Notification to be Found from {search.startDate} to{" "}
+            {search.endDate}
+          </Typography>
+        )}
+        {itemsToRender.map((item, index) => {
+          return <NotifyCard key={index} notification={item} />;
+        })}
+      </Box>
     </Box>
   );
 };

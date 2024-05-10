@@ -7,11 +7,12 @@ const fethcDailyPicture = async ({ queryKey }) => {
 
 const fetchMarsRoverPics = async ({ queryKey }) => {
   const data = queryKey[1];
+  const page = queryKey[2];
   console.log(data);
 
   let query = "mars-photos/api/v1/rovers/curiosity/photos?";
   if (data.earth_date) {
-    query += `earth_date=${data.earth_date}`;
+    query += `earth_date=${data.earth_date}&page=${page}`;
   }
 
   console.log(data);
