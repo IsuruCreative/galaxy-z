@@ -2,8 +2,12 @@ import React from "react";
 import { Box, Container, Divider, Typography } from "@mui/material";
 import background from "../../assets/bg4.jpg";
 import ReactPlayer from "react-player/youtube";
+import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
 
 const Hero = () => {
+  const { isAuthenticated } = useKindeAuth();
+
+  console.log(isAuthenticated);
   return (
     <Box
       sx={{

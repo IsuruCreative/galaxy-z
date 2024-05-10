@@ -4,13 +4,13 @@ import background from "../assets/bg6.jpg";
 import React from "react";
 
 const ProtectedProvider = ({ children }) => {
-  const { isAuthentcated, isLoading, login, register } = useKindeAuth();
+  const { isAuthenticated, isLoading, login, register } = useKindeAuth();
 
   if (isLoading) {
     return <div>Loading</div>;
   }
 
-  if (!isLoading && !isAuthentcated) {
+  if (!isAuthenticated && !isLoading) {
     return (
       <Box
         sx={{
@@ -85,9 +85,13 @@ const ProtectedProvider = ({ children }) => {
         </Box>
       </Box>
     );
+
+  
   }
 
-  return children;
+  if (isAuthenticated && !isLoading) {
+    return children;
+  }
 };
 
 export default ProtectedProvider;
