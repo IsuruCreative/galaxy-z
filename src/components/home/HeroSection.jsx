@@ -10,7 +10,7 @@ const Hero = () => {
         display: "flex",
         alignItems: "center",
         mb: 8,
-        minHeight: {xs: "90vh", md: "85vh"},
+        minHeight: { xs: "90vh", md: "85vh" },
         backgroundImage: `url(${background})`,
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(${background})`,
         backgroundSize: "cover",
@@ -28,13 +28,15 @@ const Hero = () => {
             }}
             gutterBottom
           >
-            Whereas disregard and contempt
+            Disover the Galaxy
           </Typography>
           <Typography variant="h6" gutterBottom sx={{ mb: 4 }}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            provident error esse reprehenderit in aperiam, suscipit corrupti
-            praesentium ad et blanditiis distinctio officiis perspiciatis,
-            repellat accusamus similique modi? Eos, in.
+            NASA, the National Aeronautics and Space Administration, has been
+            unveiling the secrets of the universe for more than 60 years. From
+            the iconic Apollo moon landings to the Mars rovers, NASA's
+            groundbreaking endeavors have set the stage for a new era of
+            exploration and discovery. Join us as we continue to reach for the
+            stars and unlock the mysteries of the cosmos.
           </Typography>
 
           <Divider
