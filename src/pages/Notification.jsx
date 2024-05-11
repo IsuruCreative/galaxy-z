@@ -23,14 +23,13 @@ const Notification = () => {
         backgroundSize: "cover",
         backgroundPosition: "right top",
         backgroundRepeat: "no-repeat",
-    
       }}
     >
       <Box
         sx={{
-          px: 20,
-          overflowY: "auto", 
-          maxHeight: "100vh", 
+          px: { xs: 2, md: 10, lg: 20 },
+          overflowY: "auto",
+          maxHeight: "100vh",
         }}
       >
         <ReactMarkdown>{message}</ReactMarkdown>
