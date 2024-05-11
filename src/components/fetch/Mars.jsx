@@ -83,7 +83,7 @@ const Mars = ({ limit }) => {
       </Box>
 
       {!limit && (
-        <Box sx={{ mb: 4 }}>
+        <Box sx={{ mb: 4, display: "flex" }}>
           <Button
             sx={{
               variant: "contained",
