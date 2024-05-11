@@ -35,7 +35,7 @@ const ProtectedProvider = ({ children }) => {
             my: "auto",
             maxWidth: "500px",
             py: 12,
-            px: 12,
+            px: { xs: 4, md: 12 },
           }}
         >
           <Typography variant="h4" sx={{ mb: 1 }}>
@@ -85,8 +85,6 @@ const ProtectedProvider = ({ children }) => {
         </Box>
       </Box>
     );
-
-  
   }
 
   if (isAuthenticated && !isLoading) {
