@@ -19,6 +19,7 @@ const Daily = () => {
     return <Error error={error.message} />;
   }
 
+
   console.log(data);
 
   return (

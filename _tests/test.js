@@ -65,6 +65,6 @@ test("renders error message", () => {
 test("renders footer text", () => {
   render(<Footer />);
 
-  const footerTextElement = screen.getByText(/Created for SLIIT Application Framework Module  🚀👨‍🚀🚀/i);
+  const footerTextElement = screen.getByText(/Created for SLIIT Application Framework Module 🚀👨‍🚀🚀/i);
   expect(footerTextElement).toBeInTheDocument();
 });
