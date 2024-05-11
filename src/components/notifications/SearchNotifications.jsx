@@ -58,7 +58,7 @@ const SearchNotifications = () => {
               p: 2,
               display: "flex",
               gap: 2,
-              flexWrap: { sm: "wrap", md: "nowrap" },
+              flexWrap: { xs: "wrap", md: "nowrap" },
               justifyContent: "center",
             }}
           >
