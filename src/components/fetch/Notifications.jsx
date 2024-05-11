@@ -43,7 +43,7 @@ const Notifications = ({ limit }) => {
         </Typography>
       )}
 
-      {(itemsToRender.length !== 0 || !limit) && (
+      {(itemsToRender.length !== 0 || limit) && (
         <Typography textAlign="left" variant="h4" sx={{ mb: 5 }}>
           Space Notifcations
         </Typography>
