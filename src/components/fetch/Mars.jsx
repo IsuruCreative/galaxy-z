@@ -54,17 +54,18 @@ const Mars = ({ limit }) => {
 
   return (
     <Box>
-      {itemsToRender.length === 0  && (
+      {itemsToRender.length === 0 && (
         <Typography textAlign="center" variant="h6">
           No Images to be Found
         </Typography>
       )}
 
-      {itemsToRender.length !== 0 || limit && (
-        <Typography textAlign="left" variant="h4" sx={{ mb: 5 }}>
-          Mars Rover Images
-        </Typography>
-      )}
+      {itemsToRender.length !== 0 ||
+        (limit && (
+          <Typography textAlign="left" variant="h4" sx={{ mb: 5 }}>
+            Mars Rover Images
+          </Typography>
+        ))}
 
       <Box
         sx={{
@@ -84,12 +85,11 @@ const Mars = ({ limit }) => {
       {!limit && (
         <Box sx={{ mb: 4 }}>
           <Button
-            variant="outlined"
             sx={{
+              variant: "contained",
               color: "white",
               borderRadius: 0,
               p: 2,
-
               px: 5,
               border: "2px solid white",
               ":hover": {
