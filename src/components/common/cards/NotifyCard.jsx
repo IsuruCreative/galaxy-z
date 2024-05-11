@@ -33,7 +33,7 @@ const NotifyCard = ({ notification }) => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            flexDirection: { sm: "column-reverse", md: "row" },
+            flexDirection: { xs: "column-reverse", md: "row" },
           }}
         >
           <Chip
