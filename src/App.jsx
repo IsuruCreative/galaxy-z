@@ -16,9 +16,6 @@ import ProtectedProvider from "./ctx/ProtectedProvider";
 const queryClient = new QueryClient();
 
 function App() {
-  const [count, setCount] = useState(0);
-
-
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>

@@ -101,6 +101,8 @@ export default function Nav() {
 
           {isAuthenticated && (
             <>
+              <Typography sx={{color: "#0B3D91"}} variant="h6">Galaxy Z</Typography>
+              <Divider />
               <Button color="inherit" onClick={logout}>
                 Log Out
               </Button>
