@@ -12,8 +12,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <KindeProvider
         clientId="4f1c70f99173473785650f5bf5c6ce84"
         domain="https://isuruakalanka.kinde.com"
-        redirectUri="http://localhost:5173"
-        logoutUri="http://localhost:5173"
+        redirectUri="https://zealous-coast-07043e110.5.azurestaticapps.net/"
+        logoutUri="https://zealous-coast-07043e110.5.azurestaticapps.net/"
       >
         <App />
       </KindeProvider>
